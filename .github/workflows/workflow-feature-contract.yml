@@ -8,5 +8,9 @@ on:
 jobs:
   solidity:
     uses: martelskiy/workflows/.github/workflows/solidity.yml@main
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
     with:
       working-directory: ./src
